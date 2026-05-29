@@ -1,0 +1,77 @@
+{
+    "caption": "Criar Documento com Paginas",
+    "fields": {
+        "ABL": {
+            "caption": "ID do elemento",
+            "doc": "O ID do elemento na página que será convertido em PDF. Exemplo: \"meu_container\" (não coloque #).",
+            "editor": "DynamicValue",
+            "name": "element_id",
+            "rank": 0,
+            "value": "text"
+        },
+        "ABM": {
+            "caption": "Nome do arquivo (opcional)",
+            "doc": "Nome do arquivo gerado. Exemplo: \"relatorio_vendas\". Gera relatorio_vendas.pdf.",
+            "editor": "DynamicValue",
+            "name": "filename",
+            "optional": true,
+            "rank": 1,
+            "value": "text"
+        },
+        "ABN": {
+            "caption": "Largura (mm)",
+            "doc": "Largura do PDF em milímetros. Padrão: 210 (A4). Exemplo: 148 para A5, 297 para A3.",
+            "editor": "DynamicValue",
+            "name": "width_mm",
+            "optional": true,
+            "rank": 2,
+            "value": "number"
+        },
+        "ABO": {
+            "caption": "Altura (mm)",
+            "doc": "Altura do PDF em milímetros. Padrão: 297 (A4).",
+            "editor": "DynamicValue",
+            "name": "height_mm",
+            "optional": true,
+            "rank": 3,
+            "value": "number"
+        },
+        "ABP": {
+            "caption": "Margem (mm)",
+            "doc": "Margem interna do PDF (em mm). Padrão: 10. Exemplo: 5 (bordas mais finas).",
+            "editor": "DynamicValue",
+            "name": "margin_mm",
+            "optional": true,
+            "rank": 4,
+            "value": "number"
+        },
+        "ABQ": {
+            "caption": "Qualidade",
+            "default_val": "2",
+            "doc": "Escala de renderização do html2canvas. Padrão: 2. Quanto maior, mais nítido (mas mais pesado).",
+            "editor": "Dropdown",
+            "name": "scale",
+            "optional": true,
+            "options": "2,3,4,5",
+            "rank": 5
+        },
+        "ABR": {
+            "caption": "Tempo Limite",
+            "default_val": 5000,
+            "doc": "Tempo limite para carregar imagens externas (em milissegundos). Padrão: 5000.",
+            "editor": "DynamicValue",
+            "name": "timeout",
+            "optional": true,
+            "rank": 6,
+            "value": "number"
+        },
+        "ABS": {
+            "caption": "Salvar no Bubble",
+            "default_val": false,
+            "doc": "Se verdadeiro, salva o PDF no servidor do Bubble e retorna a URL no estado element_pdf. Se falso, apenas abre em nova aba.",
+            "editor": "Checkbox",
+            "name": "save",
+            "rank": 7
+        }
+    }
+}

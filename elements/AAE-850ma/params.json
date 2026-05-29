@@ -1,0 +1,86 @@
+{
+    "add_is_visible": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 18,
+        "width": 18
+    },
+    "display": "PDF Builder",
+    "events": {
+        "AAK": {
+            "caption": "Image Saved",
+            "name": "image"
+        },
+        "AAL": {
+            "caption": "Page Saved",
+            "name": "page"
+        },
+        "AAM": {
+            "caption": "Element Saved",
+            "name": "element"
+        }
+    },
+    "icon": "ion-android-document",
+    "platform_type": "web",
+    "property_applications": {
+        "resizable": true
+    },
+    "states": {
+        "AAF": {
+            "caption": "Image URL",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "image",
+            "value": "image"
+        },
+        "AAH": {
+            "caption": "Element PDF File",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "element_pdf",
+            "value": "file"
+        },
+        "AAI": {
+            "caption": "Errors",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "errors",
+            "value": "text"
+        },
+        "AAJ": {
+            "caption": "Status",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "status",
+            "value": "text"
+        },
+        "AAZ": {
+            "caption": "Page PDF FIle",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "page_pdf",
+            "value": "file"
+        },
+        "ABg": {
+            "caption": "PDF URL",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "pdf_url",
+            "value": "text"
+        },
+        "ABh": {
+            "caption": "PDF base64",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "pdf_base64",
+            "value": "text"
+        }
+    }
+}

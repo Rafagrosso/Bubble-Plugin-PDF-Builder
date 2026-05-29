@@ -1,0 +1,70 @@
+{
+    "caption": "element_pdf",
+    "fields": {
+        "ABW": {
+            "caption": "element_id",
+            "editor": "DynamicValue",
+            "name": "element_id",
+            "rank": 0,
+            "value": "text"
+        },
+        "ABX": {
+            "caption": "width_mm",
+            "editor": "DynamicValue",
+            "name": "width_mm",
+            "rank": 1,
+            "value": "number"
+        },
+        "ABY": {
+            "caption": "height_mm",
+            "editor": "DynamicValue",
+            "name": "height_mm",
+            "rank": 2,
+            "value": "number"
+        },
+        "ABZ": {
+            "caption": "margin_mm",
+            "editor": "DynamicValue",
+            "name": "margin_mm",
+            "rank": 3,
+            "value": "number"
+        },
+        "ABa": {
+            "caption": "scale",
+            "default_val": "2",
+            "editor": "Dropdown",
+            "name": "scale",
+            "options": "2,3,4,5",
+            "rank": 4
+        },
+        "ABb": {
+            "caption": "timeout",
+            "default_val": 5000,
+            "editor": "DynamicValue",
+            "name": "timeout",
+            "rank": 5,
+            "value": "number"
+        },
+        "ABc": {
+            "caption": "filename",
+            "editor": "DynamicValue",
+            "name": "filename",
+            "rank": 6,
+            "value": "text"
+        },
+        "ABd": {
+            "caption": "download",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "download",
+            "rank": 7
+        },
+        "ABe": {
+            "caption": "save",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "save",
+            "rank": 8
+        }
+    }
+}

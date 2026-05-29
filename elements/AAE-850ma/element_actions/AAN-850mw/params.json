@@ -1,0 +1,57 @@
+{
+    "caption": "Criar Documento",
+    "fields": {
+        "AAO": {
+            "caption": "ID do Elemento",
+            "doc": "ID do elemento HTML que será convertido em PDF.",
+            "editor": "DynamicValue",
+            "name": "element_id",
+            "rank": 0,
+            "value": "text"
+        },
+        "AAQ": {
+            "caption": "Largura do Elemento",
+            "doc": "Largura (em milimetros) do seu elemento.",
+            "editor": "DynamicValue",
+            "name": "width_mm",
+            "optional": true,
+            "rank": 1,
+            "value": "number"
+        },
+        "AAR": {
+            "caption": "Altura do Elemento",
+            "doc": "Altura (em milimetros) do seu elemento.",
+            "editor": "DynamicValue",
+            "name": "height_mm",
+            "optional": true,
+            "rank": 2,
+            "value": "number"
+        },
+        "AAS": {
+            "caption": "Qualidade do PDF",
+            "default_val": "2",
+            "doc": "Qualidade do PDF: 2 = Qualidade normal (tamanho de arquivo normal) 3 = Qualidade média (tamanho de arquivo médio) 4 = Melhor qualidade (tamanho de arquivo grande) 5 = Excelente qualidade (tamanho de arquivo extra grande)",
+            "editor": "Dropdown",
+            "name": "scale",
+            "options": "2,3,4,5",
+            "rank": 4
+        },
+        "AAr": {
+            "caption": "Margem do Documento",
+            "default_val": 0,
+            "doc": "Margem (em milímetros) do documento PDF",
+            "editor": "DynamicValue",
+            "name": "margin_mm",
+            "optional": true,
+            "rank": 3,
+            "value": "number"
+        },
+        "ABf": {
+            "caption": "Open in new tab",
+            "default_val": true,
+            "editor": "Checkbox",
+            "name": "open_in_new_tab",
+            "rank": 5
+        }
+    }
+}

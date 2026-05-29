@@ -1,0 +1,19 @@
+{
+    "categories": {
+        "0": "containers",
+        "1": "data (things)",
+        "2": "technical",
+        "3": "productivity",
+        "4": "PDF"
+    },
+    "data_tracked": false,
+    "demo_page": "https://print-document-pdf.bubbleapps.io/version-test",
+    "description": "Este plugin permite gerar arquivos PDF diretamente a partir de elementos da página (grupos, seções, tabelas etc.) de forma simples e automatizada.\n\nPrincipais funcionalidades:\n- Gera PDF de qualquer elemento da página pelo seu ID (element_id)\n- Configuração de margens, orientação (retrato/paisagem) e escala\n- Opção de download automático do arquivo PDF\n- Opção para salvar o arquivo no servidor Bubble\n- Compatível com imagens externas (CORS) e conteúdo com links\n- Garante melhor renderização de textos e estilos CSS",
+    "designed_for": "web",
+    "image": "//meta-q.cdn.bubble.io/f1760065988970x625778006444544100/PDF_file_icon.svg.png",
+    "license": "open_source",
+    "link": "",
+    "name": "PDF Builder",
+    "platforms_new": "web",
+    "plugin_instructions": "Exemplo de uso: \n1- Atribua um ID ao grupo ou elemento que deseja converter em PDF.\n2- Configure a ação do plugin informando o ID, nome do arquivo e demais opções desejadas.\n3- O PDF será gerado automaticamente, podendo ser baixado ou salvo no servidor."
+}
