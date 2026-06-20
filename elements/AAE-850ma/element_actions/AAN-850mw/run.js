@@ -51,19 +51,37 @@ function(instance, properties, context) {
 
             pdf.addImage(imgData, 'PNG', xOffset, yOffset, finalWidth, finalHeight, undefined, 'FAST');
 
+            const fileName = properties.file_name || 'documento.pdf';
+
             const pdfBlob = pdf.output('blob');
             const pdfUrl = URL.createObjectURL(pdfBlob);
-            const pdfBase64 = pdf.output('datauristring');
+
+            const pdfDataUri = pdf.output('datauristring');
+            const pdfBase64 = pdfDataUri.split(',')[1];
 
             instance.publishState('pdf_url', pdfUrl);
-            instance.publishState('pdf_base64', pdfBase64);
+            instance.publishState('pdf_base64', pdfDataUri);
 
             if (properties.open_in_new_tab === true) {
                 window.open(pdfUrl, '_blank');
             }
 
-            instance.publishState('status', 'PDF gerado com sucesso.');
-            instance.triggerEvent('completed');
+            instance.publishState('status', 'Enviando arquivo para o Bubble...');
+
+            context.uploadContent(fileName, pdfBase64, function(err, uploadedFileUrl) {
+                if (err) {
+                    console.error(err);
+                    instance.publishState('errors', err.message || String(err));
+                    instance.publishState('status', 'Erro ao salvar arquivo no Bubble.');
+                    return;
+                }
+
+                instance.publishState('pdf_file', uploadedFileUrl);
+                instance.publishState('pdf_url', uploadedFileUrl);
+
+                instance.publishState('status', 'PDF gerado com sucesso.');
+                instance.triggerEvent('completed');
+            });
 
         } catch (err) {
             console.error(err);

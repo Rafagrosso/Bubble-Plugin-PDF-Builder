@@ -18,6 +18,10 @@
         "AAM": {
             "caption": "Element Saved",
             "name": "element"
+        },
+        "ABj": {
+            "caption": "completed",
+            "name": "completed"
         }
     },
     "icon": "ion-android-document",
@@ -81,6 +85,14 @@
             },
             "name": "pdf_base64",
             "value": "text"
+        },
+        "ABi": {
+            "caption": "pdf_file",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "pdf_file",
+            "value": "file"
         }
     }
 }
